@@ -12,13 +12,32 @@ export default function Navbar() {
           <li className="hover:underline-offset-8 hover:underline">
             <Link href={"/buy"}>Buy</Link>
           </li>
-          <li className="hover:underline-offset-8 hover:underline">
+          <li className="hover:underline-offset-8 hover:underline group relative">
             <Link href={"/service"}>Service</Link>
+            <span className="hidden w-[130px] group-hover:block absolute top-5 left-[-10px] bg-slate-800  border border-gray-900">
+              <ul className="">
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                  <Link href={"/service/3d-design"}> 3D Design</Link>
+                </li>
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                  <Link href={"/service/CAD-design"}>CAD Design</Link>
+                </li>
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                  <Link href={"/service/video-editing"}>Video Editing</Link>
+                </li>
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                  <Link href={"/service/web-design"}>Website Design</Link>
+                </li>
+              </ul>
+            </span>
           </li>
+          {/* <li className="hover:underline-offset-8 hover:underline">
+            <Link href={"/design"}>Design</Link>
+          </li> */}
         </ul>
         <div className="loginncart flex gap-5  items-center">
           <div className="login">Raushan</div>
-          <div className="cart  w-10 h-10">
+          <div className="cart relative w-10 h-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
@@ -34,6 +53,9 @@ export default function Navbar() {
                 <circle className="cls-1" cx="24" cy="26" r="2" />
               </g>
             </svg>
+            <span className="absolute px-1 py-[1px] top-0 right-0 text-center rounded-full bg-red-800 text-[10px]">
+              1
+            </span>
           </div>
         </div>
       </nav>

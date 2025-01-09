@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Navbar() {
+export default function buy() {
   return (
     <>
       <header className="px-20 py-5 text-[25px]">Buy Page</header>

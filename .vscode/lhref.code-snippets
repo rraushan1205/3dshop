@@ -1,0 +1,9 @@
+{
+	"page default": {
+		"prefix": "Lhref",
+		"body": [
+			"<Link href={\"${1:a}\"}>${2:a}</Link>"
+		],
+		"description": "Creates link format"
+	}
+}
