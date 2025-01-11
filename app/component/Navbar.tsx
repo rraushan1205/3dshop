@@ -3,39 +3,39 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <nav className="flex justify-between px-20 border-b border-gray-800 py-1 items-center">
+      <nav className="flex justify-between px-20 border-b border-gray-800  items-center text-[22px]">
         <div className="logo">Logo</div>
-        <ul className="flex gap-5 ">
-          <li className="hover:underline-offset-8 hover:underline">
+        <ul className="flex gap-5  py-2">
+          <li className="hover:underline-offset-8 py-2 hover:underline">
             <Link href={"/"}>Dashboard</Link>
           </li>
-          <li className="hover:underline-offset-8 hover:underline">
+          <li className="hover:underline-offset-8 py-2 hover:underline">
             <Link href={"/buy"}>Buy</Link>
           </li>
-          <li className="hover:underline-offset-8 hover:underline group relative">
-            <Link href={"/service"}>Service</Link>
-            <span className="hidden w-[130px] group-hover:block absolute top-5 left-[-10px] bg-slate-800  border border-gray-900">
+          <li className="hover:underline-offset-8 py-2  hover:underline group relative">
+            Service
+            <span className="hidden w-[160px] group-hover:block absolute top-10 left-[-10px] bg-slate-800  border border-gray-900">
               <ul className="">
-                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer py-2 text-[20px]">
                   <Link href={"/service/3d-design"}> 3D Design</Link>
                 </li>
-                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer py-2 text-[20px]">
                   <Link href={"/service/CAD-design"}>CAD Design</Link>
                 </li>
-                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer py-2 text-[20px]">
                   <Link href={"/service/video-editing"}>Video Editing</Link>
                 </li>
-                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer">
+                <li className="border-t border-slate-900 hover:bg-slate-900 px-2 cursor-pointer py-2 text-[20px]">
                   <Link href={"/service/web-design"}>Website Design</Link>
                 </li>
               </ul>
             </span>
           </li>
-          {/* <li className="hover:underline-offset-8 hover:underline">
+          {/* <li className="hover:underline-offset-8 py-2 hover:underline">
             <Link href={"/design"}>Design</Link>
           </li> */}
         </ul>
-        <div className="loginncart flex gap-5  items-center">
+        <div className="loginncart flex gap-5 py-2 items-center">
           <div className="login">Raushan</div>
           <div className="cart relative w-10 h-10">
             <svg
