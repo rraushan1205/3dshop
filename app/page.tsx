@@ -1,7 +1,7 @@
 import Image from "next/image";
 import image1 from "../public/img1.webp";
 import Link from "next/link";
-
+import { Analytics } from "@vercel/analytics/react";
 export default function Home() {
   // bg-gradient-to-r from-orange-500 via-blue-900 to-red-900
   return (
@@ -62,6 +62,7 @@ export default function Home() {
           assets that meet the highest industry standards.
         </p>
       </div>
+      <Analytics />
     </>
   );
 }
