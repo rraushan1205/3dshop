@@ -1,10 +1,14 @@
 import Link from "next/link";
+import logo from "../../public/logo.jpg";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <>
       <nav className="flex justify-between px-20 border-b border-gray-800  items-center text-[22px]">
-        <div className="logo">Logo</div>
+        <div className="logo">
+          <Image src={logo} alt="logo" className="w-10 h-10 rounded-3xl" />
+        </div>
         <ul className="flex gap-5  py-2">
           <li className="hover:underline-offset-8 py-2 hover:underline">
             <Link href={"/"}>Dashboard</Link>
